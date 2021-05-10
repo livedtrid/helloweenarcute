@@ -38,7 +38,7 @@
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
 	
 	<a-assets>
-	<a-asset-item id="halloween" src="scene.gltf" response-type="arraybuffer" ></a-asset-item>
+	<a-asset-item id="halloween" src="scene.gltf"></a-asset-item>
 	</a-assets>
   >
     <!-- a-nft is the anchor that defines an Image Tracking entity -->
@@ -46,7 +46,7 @@
     <!-- the path should end with the name without the extension e.g. if file is 'pinball.fset' the path should end with 'pinball' -->
     <a-nft
       type="nft"
-      url="/markers/default_white_background/default_white_background"
+      url="default_white_background"
       smooth="true"
       smoothCount="10"
       smoothTolerance=".01"
