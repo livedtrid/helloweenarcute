@@ -36,6 +36,10 @@
     renderer="logarithmicDepthBuffer: true;"
     embedded
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+	
+	<a-assets>
+		<a-asset-item id="halloween" src="/resources/halloween/scene.gltf"></a-asset-item>
+	</a-assets>
   >
     <!-- a-nft is the anchor that defines an Image Tracking entity -->
     <!-- on 'url' use the path to the Image Descriptors created before. -->
@@ -49,9 +53,7 @@
       smoothThreshold="5"
     >
         <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
-	  <a-assets>
-		<a-asset-item id="halloween" src="/resources/halloween/scene.gltf"></a-asset-item>
-	  </a-assets>
+
 
 	  <a-entity gltf-model="#halloween">
 		scale="2 2 2"
